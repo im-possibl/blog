@@ -124,6 +124,33 @@
   				opacity: "1"
   			});
   		});
+
+  	$(window)
+  		.mousedown(function() {
+  			cursor.css({
+  				transform: "scale(.4)"
+  			});
+  		})
+  		.mouseup(function() {
+  			cursor.css({
+  				transform: "scale(1)"
+  			});
+  		});
+    </script>
+    <script type="text/javascript">
+      function is_touch_enabled()
+      {
+        return ('ontouchstart' in window ) ||  ( navigator.maxTouchPoints > 0 ) || ( navigator.msMaxTouchPoints > 0 );
+      }
+
+      if(is_touch_enabled())
+      {
+        document.getElementById('cursor').style.display = none;
+      }
+      else
+      {
+        document.getElementById('cursor').style.display = block;
+      }
     </script>
     <script type="text/javascript">
       document.querySelector('.one').addEventListener('click', function()
@@ -161,21 +188,6 @@
           document.getElementById("two").style.width = "280px";
         }
       });
-    </script>
-    <script type="text/javascript">
-      function is_touch_enabled()
-      {
-        return ( 'ontouchstart' in window ) ||  ( navigator.maxTouchPoints > 0 ) || ( navigator.msMaxTouchPoints > 0 );
-      }
-
-      if(is_touch_enabled())
-      {
-        document.getElementById('cursor').style.display = none;
-      }
-      else
-      {
-        document.getElementById('cursor').style.display = block;
-      }
     </script>
   </body>
 </html>
