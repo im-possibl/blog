@@ -140,7 +140,7 @@
     <script type="text/javascript">
       if ("ontouchstart" in document.documentElement)
       {
-      document.getElementById('cursor').style.display = "none";
+        document.getElementById('cursor').style.display = "none";
       }
     </script>
     <script type="text/javascript">
@@ -155,11 +155,20 @@
           y.style.display = "none";
           x.style.display = "inline";
         }
-        else {
+        else
+        {
           x.style.display = "none";
           y.style.display = "inline";
-          document.getElementById("one").style.height = "280px";
-          document.getElementById("one").style.width = "280px";
+          var mq = window.matchMedia("(max-width: 418px)");
+          if(mq.matches)
+          {
+            document.getElementById("one").style.height = "310px;";
+          }
+          else
+          {
+            document.getElementById("one").style.height = "280px";
+            document.getElementById("one").style.width = "280px";
+          }
         }
       });
     </script>
