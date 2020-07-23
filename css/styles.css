@@ -121,19 +121,19 @@ a
   padding: 20px;
   transition: width 0.5s;
   transition: height 0.5s;
-  box-shadow: 5px 5px 10px rgba(221, 187, 166, 0.034);
+  box-shadow: 5px 5px 10px rgba(242, 183, 129, 0.034);
   transition: box-shadow 0.5s;
 }
 
 .flexcontent .box:hover
 {
   box-shadow:
-  0 2.8px 2.2px rgba(221, 187, 166, 0.034),
-  0 6.7px 5.3px rgba(221, 187, 166, 0.048),
-  0 12.5px 10px rgba(221, 187, 166, 0.06),
-  0 22.3px 17.9px rgba(221, 187, 166, 0.072),
-  0 41.8px 33.4px rgba(221, 187, 166, 0.086),
-  0 100px 80px rgba(221, 187, 166, 0.12);
+  0 2.8px 2.2px rgba(242, 183, 129, 0.034),
+  0 6.7px 5.3px rgba(242, 183, 129, 0.048),
+  0 12.5px 10px rgba(242, 183, 129, 0.06),
+  0 22.3px 17.9px rgba(242, 183, 129, 0.072),
+  0 41.8px 33.4px rgba(242, 183, 129, 0.086),
+  0 100px 80px rgba(242, 183, 129, 0.12);
   transition: box-shadow 0.5s;
 }
 
