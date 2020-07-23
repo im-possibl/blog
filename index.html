@@ -138,19 +138,10 @@
   		});
     </script>
     <script type="text/javascript">
-      function is_touch_enabled()
-      {
-        return ('ontouchstart' in window ) ||  ( navigator.maxTouchPoints > 0 ) || ( navigator.msMaxTouchPoints > 0 );
-      }
-
-      if(is_touch_enabled())
+      window.addEventListener('touchstart', function()
       {
         document.getElementById('cursor').style.display = none;
-      }
-      else
-      {
-        document.getElementById('cursor').style.display = block;
-      }
+      });
     </script>
     <script type="text/javascript">
       document.querySelector('.one').addEventListener('click', function()
