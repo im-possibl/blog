@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Contact.</title>
+    <title>Iampossibl.</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,16 +10,18 @@
   </head>
   <body>
     <div class = "wrapper">
-      <div class = "cursor"></div>
+      <div class = "cursor" id = "cursor"></div>
       <div class = "header">
         <div class = "header_logo">
           <a href = "index.html">IAMPOSSIBL<span>.</span></a>
         </div>
         <div class = "head_navigation" id = "navigation">
-          <a class = "tab" href = "index.html">HOME</a>
+          <a class = "tab active" href = "index.html">HOME</a>
           <a class = "tab" href = "about.html">ABOUT</a>
-          <a class = "tab active" href = "contact.html">CONTACT</a>
+          <a class = "tab" href = "contact.html">CONTACT</a>
+          <a class = "menu" onclick=""><img src = "images/menu.svg"></a>
         </div>
+
       </div>
       <div class = "bodycontent">
 
@@ -32,6 +34,9 @@
           <a class = "tab" href = "#">INSTAGRAM</a>
           <a class = "tab" href = "#">YOUTUBE</a>
           <a class = "tab" href = "#">LINKEDIN</a>
+          <a class = "icon" href = "#"><img src = "images/instagram.svg"></a>
+          <a class = "icon" href = "#"><img src = "images/youtube.svg"></a>
+          <a class = "icon" href = "#"><img src = "images/linkedin.svg"></a>
         </div>
       </div>
     </div>
@@ -57,6 +62,24 @@
   				opacity: "1"
   			});
   		});
+
+  	$(window)
+  		.mousedown(function() {
+  			cursor.css({
+  				transform: "scale(.4)"
+  			});
+  		})
+  		.mouseup(function() {
+  			cursor.css({
+  				transform: "scale(1)"
+  			});
+  		});
+    </script>
+    <script type="text/javascript">
+      window.addEventListener('touchstart', function()
+      {
+        document.getElementById('cursor').style.display = none;
+      });
     </script>
   </body>
 </html>
