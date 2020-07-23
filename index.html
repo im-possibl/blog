@@ -138,10 +138,10 @@
   		});
     </script>
     <script type="text/javascript">
-      window.addEventListener('touchstart', function()
+      if ("ontouchstart" in document.documentElement)
       {
-        document.getElementById('cursor').style.display = "none";
-      });
+      document.getElementById('cursor').style.display = "none";
+      }
     </script>
     <script type="text/javascript">
       document.querySelector('.one').addEventListener('click', function()
