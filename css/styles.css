@@ -238,3 +238,48 @@ a
     transition: 0.3s;
   }
 }
+
+@media only screen and (max-width: 417px)
+{
+  .flexcontent .box
+  {
+    height: 310px;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 411px)
+{
+  .flexcontent .box
+  {
+    height: 320px;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 359px)
+{
+  .flexcontent .box
+  {
+    height: 340px;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 336px)
+{
+  .flexcontent .box
+  {
+    height: 370px;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 317px)
+{
+  .flexcontent .box
+  {
+    height: 390px;
+    transition: 0.3s;
+  }
+}
